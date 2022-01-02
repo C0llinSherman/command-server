@@ -7,14 +7,14 @@ let count = 0
 
 const server = net.createServer((client) => {
     client.write("Welcome to the chat room!")
-    client.id = ++count
+    client.id = `Guest${++count}`
     clients.push(client)
     clients.forEach(currClient => {
         if (currClient.id !== client.id) {
-            currClient.write(`Client ${client.id} joined the chat`);
+            currClient.write(`${client.id} joined the chat`);
         }
         else if (currClient.id === client.id) {
-            let message = `Client ${client.id} joined the chat\n`
+            let message = `${client.id} joined the chat\n`
             fs.appendFile(fileName, message, (err) => {
                 if (err) {
                     console.log(err);
@@ -23,27 +23,106 @@ const server = net.createServer((client) => {
         }
     })
     client.on('data', (data) => {
-        clients.forEach(currClient => {
-            if (currClient.id !== client.id) {
-                currClient.write(`Client ${client.id}:  ${data}`);
-            }
-            else if (currClient.id === client.id) {
-                let message = `Client ${client.id}:  ${data}`
-                fs.appendFile(fileName, message, (err) => {
-                    if (err) {
-                        console.log(err);
+        console.log(data.toString())
+        //Command Logic
+        let dataArray = data.toString().split(" ")
+        console.log(dataArray)
+        if (dataArray[0][0] == '/') {
+            //Whisper
+            if (dataArray[0].toString().trimEnd() == '/w' || dataArray[0].toString().trimEnd() == '/whisper') {
+                let whisperMessage = ''
+                for (let i = 2; i < dataArray.length; i++) {
+                    whisperMessage += dataArray[i].toString().trimEnd()
+                    whisperMessage += ' '
+                }
+                if (whisperMessage == '') {
+                    client.write('command must include message')
+                }
+                else {
+                    let clientExists = false
+                    clients.forEach(currClient => {
+                        if (currClient.id.toLowerCase() == dataArray[1].toString().toLowerCase().trimEnd()) {
+                            currClient.write(`Whisper from ${client.id}: ` + whisperMessage)
+                            clientExists == true
+                        }
+                    })
+                    if (clientExists == false) {
+                        client.write("Client does not exist")
                     }
-                })
+                }
             }
-        })
+            //Username
+            else if (dataArray[0].toString().trimEnd() == '/username') {
+                if (!dataArray[1]) {
+                    client.write(`Current Username: ${client.id}`)
+                }
+                else {
+                    let usernameTaken = false
+                    clients.forEach(currClient => {
+                        if (currClient.id.toLowerCase() == dataArray[1].toString().toLowerCase().trimEnd()) {
+                            client.write("Username is taken")
+                            usernameTaken = true
+                        }
+                    })
+                    if (usernameTaken == false) {
+                        client.id = dataArray[1].toString().trimEnd()
+                        client.write('username successfully changed')
+                    }
+                }
+            }
+            //Kick
+            else if (dataArray[0].toString().trimEnd() == '/kick') {
+                console.log("kick initiated")
+                if (dataArray[2].toString().trimEnd() == 'password') {
+                    clients.forEach(currClient => {
+                        if (currClient.id == dataArray[1].toString().trimEnd()) {
+                            currClient.write('kick')
+                        }
+                    })
+                    client.write("kick successful")
+                }
+                else {
+                    client.write("incorrect password")
+                }
+            }
+            //Client List
+            else if (dataArray[0].toString().trimEnd() == '/clientlist') {
+                console.log("clientlist")
+                let clientlist = []
+                clients.forEach(currClient => {
+                    clientlist.push(currClient.id)
+                })
+                client.write(clientlist.toString())
+            }
+            //Invalid Command
+            else {
+                client.write("Please enter a valid command")
+            }
+        }
+        //General Message
+        else {
+            clients.forEach(currClient => {
+                if (currClient.id !== client.id) {
+                    currClient.write(`${client.id}:  ${data}`);
+                }
+                else if (currClient.id === client.id) {
+                    let message = `${client.id}:  ${data}`
+                    fs.appendFile(fileName, message, (err) => {
+                        if (err) {
+                            console.log(err);
+                        }
+                    })
+                }
+            })
+        }
         console.log("Msg from client:" + data.toString());
     });
     client.on("end", () => {
         console.log('client disconnected')
         clients.forEach(currClient => {
-            currClient.write(`Client ${client.id} disconnected`)
+            currClient.write(`${client.id} disconnected`)
         })
-        let message = `Client ${client.id} disconnected\n`
+        let message = `${client.id} disconnected\n`
         fs.appendFile(fileName, message, (err) => {
             if (err) {
                 console.log(err);

@@ -58,3 +58,585 @@ Client 11:  whisperClient 11 disconnected
 Client 12 joined the chat
 Client 12:  /w,collin,hey
 whisperClient 12 disconnected
+Client 13 joined the chat
+Client 13:  /w
+Client 13 disconnected
+Client 14 joined the chat
+Client 14:  /w
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 2 disconnected
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1:  /kick 2 sda;klfj
+Client 2 disconnected
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 disconnected
+Client 2 disconnected
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 2 disconnected
+Client 4 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 disconnected
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 2:  clientlist
+Client 1 joined the chat
+Client collin:  /listclients
+Client collin:  collin
+Client 2 joined the chat
+Client 3 joined the chat
+Client sherman:  /whisper collin how are you
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 1 disconnected
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1:  /whisper 2 how are you
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 3 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 disconnected
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client 2 joined the chat
+Client 1 joined the chat
+Client user  joined the chat
+Client user  joined the chat
+Client user  joined the chat
+Client user  joined the chat
+Client user  joined the chat
+Client user  joined the chat
+Client user :  client list
+Client user :  client list
+Client user :  client list
+Client 1 joined the chat
+Client 2 joined the chat
+Client user1 joined the chat
+Client user2 joined the chat
+Client user3 joined the chat
+Client user1 joined the chat
+Client user2 joined the chat
+Client user3 joined the chat
+Client user3:  /client list
+Client ser1 joined the chat
+Client ser2 joined the chat
+Client ser3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+sherman:  /listclients
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 disconnected
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest2:  
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+collin:  ho
+collin:  sdf
+collin:  fs
+collin:  b
+collin:  afs
+Guest2:  asdf
+Guest2:  asdf
+Guest2:  asd
+Guest2:  fasdf
+Guest3:  sadf
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1:  bf/username
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest3 joined the chat
+Guest2 joined the chat
+Guest3:  ;lkj
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest3 joined the chat
+Guest1 joined the chat
+Guest2 joined the chat
+Guest1 disconnected
+Guest2 disconnected
