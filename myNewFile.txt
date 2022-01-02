@@ -1,0 +1,60 @@
+Client 1 joined the chat
+Client 1:  /w
+Client 1:  /username
+Client 1 joined the chat
+Client 1:  /w
+Client 1 joined the chat
+Client 1:  /w
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1:  /w
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1:  /w
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1:  /w
+Client 1 joined the chat
+Client 1:  /w
+Client 1:  /w
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1 joined the chat
+Client 1:  fa;lk
+Client 1 joined the chat
+Client 1 disconnected
+Client 2 joined the chat
+Client 2 disconnected
+Client 3 joined the chat
+Client 3 disconnected
+Client 4 joined the chat
+Client 4 disconnected
+Client 5 joined the chat
+Client 5 disconnected
+Client 6 joined the chat
+Client 6 disconnected
+Client 7 joined the chat
+Client 7 disconnected
+Client 8 joined the chat
+Client 8:  whisperClient 8 disconnected
+Client 9 joined the chat
+Client 9 disconnected
+Client 10 joined the chat
+Client 10:  whisperClient 10:  whisperClient 10 disconnected
+Client 11 joined the chat
+Client 11:  whisperClient 11 disconnected
+Client 12 joined the chat
+Client 12:  /w,collin,hey
+whisperClient 12 disconnected
