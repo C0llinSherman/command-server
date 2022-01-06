@@ -26,29 +26,39 @@ const server = net.createServer((client) => {
         console.log(data.toString())
         //Command Logic
         let dataArray = data.toString().split(" ")
-        console.log(dataArray)
         if (dataArray[0][0] == '/') {
             //Whisper
             if (dataArray[0].toString().trimEnd() == '/w' || dataArray[0].toString().trimEnd() == '/whisper') {
-                let whisperMessage = ''
-                for (let i = 2; i < dataArray.length; i++) {
-                    whisperMessage += dataArray[i].toString().trimEnd()
-                    whisperMessage += ' '
-                }
-                if (whisperMessage == '') {
-                    client.write('command must include message')
+                if (client.id.toLowerCase() !== dataArray[1].toString().toLowerCase().trimEnd()) {
+                    let whisperMessage = ''
+                    for (let i = 2; i < dataArray.length; i++) {
+                        whisperMessage += dataArray[i].toString().trimEnd()
+                        whisperMessage += ' '
+                    }
+                    if (whisperMessage == '') {
+                        client.write('command must include message')
+                    }
+                    else {
+                        let clientExists = false
+                        clients.forEach(currClient => {
+                            if (currClient.id.toLowerCase() == dataArray[1].toString().toLowerCase().trimEnd()) {
+                                currClient.write(`Whisper from ${client.id}: ` + whisperMessage)
+                                clientExists = true
+                                let message = `${client.id} whispered to ${currClient.id}: ${whisperMessage}\n`
+                                fs.appendFile(fileName, message, (err) => {
+                                    if (err) {
+                                        console.log(err);
+                                    }
+                                })
+                            }
+                        })
+                        if (clientExists == false) {
+                            client.write("Client does not exist")
+                        }
+                    }
                 }
                 else {
-                    let clientExists = false
-                    clients.forEach(currClient => {
-                        if (currClient.id.toLowerCase() == dataArray[1].toString().toLowerCase().trimEnd()) {
-                            currClient.write(`Whisper from ${client.id}: ` + whisperMessage)
-                            clientExists == true
-                        }
-                    })
-                    if (clientExists == false) {
-                        client.write("Client does not exist")
-                    }
+                    client.write("You can't whisper to yourself")
                 }
             }
             //Username
@@ -65,34 +75,81 @@ const server = net.createServer((client) => {
                         }
                     })
                     if (usernameTaken == false) {
+                        let oldClientId = client.id
                         client.id = dataArray[1].toString().trimEnd()
+                        clients.forEach(currClient => {
+                            if (currClient.id.toLowerCase() !== dataArray[1].toString().toLowerCase().trimEnd()) {
+                                currClient.write(`${oldClientId} changed their username to ${dataArray[1].toString().trimEnd()}`)
+                            }
+                            else {
+                                let message = `${oldClientId} changed their username to ${dataArray[1].toString().trimEnd()}\n`
+                                fs.appendFile(fileName, message, (err) => {
+                                    if (err) {
+                                        console.log(err);
+                                    }
+                                })
+                            }
+                        })
                         client.write('username successfully changed')
                     }
                 }
             }
             //Kick
             else if (dataArray[0].toString().trimEnd() == '/kick') {
-                console.log("kick initiated")
-                if (dataArray[2].toString().trimEnd() == 'password') {
-                    clients.forEach(currClient => {
-                        if (currClient.id == dataArray[1].toString().trimEnd()) {
-                            currClient.write('kick')
+                if (client.id.toLowerCase() !== dataArray[1].toString().toLowerCase().trimEnd()) {
+                    console.log("kick initiated")
+                    let clientToKick = ''
+                    if (dataArray[2]) {
+                        if (dataArray[2].toString().trimEnd() == "password") {
+                            clients.forEach(currClient => {
+                                if (currClient.id.toLowerCase() == dataArray[1].toString().toLowerCase().trimEnd()) {
+                                    currClient.write(`Kicked by ${client.id}\n`)
+                                    clientToKick = currClient
+                                }
+                            })
+                            clients.forEach(currClient => {
+                                if (currClient.id.toLowerCase() !== client.id.toLowerCase() && currClient.id.toLowerCase() !== clientToKick.id.toLowerCase()) {
+                                    currClient.write(`${client.id} kicked ${dataArray[1].toString().toLowerCase().trimEnd()} out of the chat`)
+                                }
+                                else if (currClient.id.toLowerCase() === client.id.toLowerCase()) {
+                                    let message = `${client.id} kicked ${dataArray[1].toString().toLowerCase().trimEnd()} out of the chat\n`
+                                    fs.appendFile(fileName, message, (err) => {
+                                        if (err) {
+                                            console.log(err);
+                                        }
+                                    })
+                                }
+                            })
+                            clientToKick.write('kick')
+                            client.write("kick successful")
                         }
-                    })
-                    client.write("kick successful")
+
+                        else {
+                            client.write("incorrect password")
+                        }
+                    }
+                    else {
+                        client.write("command must include password")
+                    }
                 }
                 else {
-                    client.write("incorrect password")
+                    client.write("You can't kick yourself")
                 }
             }
             //Client List
             else if (dataArray[0].toString().trimEnd() == '/clientlist') {
-                console.log("clientlist")
+                console.log('client list')
                 let clientlist = []
                 clients.forEach(currClient => {
                     clientlist.push(currClient.id)
                 })
                 client.write(clientlist.toString())
+                let message = `Client List: ${clientlist.toString()}`
+                fs.appendFile(fileName, message, (err) => {
+                    if (err) {
+                        console.log(err);
+                    }
+                })
             }
             //Invalid Command
             else {
@@ -122,6 +179,8 @@ const server = net.createServer((client) => {
         clients.forEach(currClient => {
             currClient.write(`${client.id} disconnected`)
         })
+        let clientIndex = clients.indexOf(client)
+        clients.splice(clientIndex, 1)
         let message = `${client.id} disconnected\n`
         fs.appendFile(fileName, message, (err) => {
             if (err) {
@@ -136,3 +195,9 @@ server.on('data', (data) => {
     console.log(data)
 })
 console.log('server started')
+let serverStartLog = 'Server Started Successfully\n'
+fs.appendFile(fileName, serverStartLog, (err) => {
+    if (err) {
+        console.log(err);
+    }
+})
